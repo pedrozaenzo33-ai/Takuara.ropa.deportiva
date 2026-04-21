@@ -133,20 +133,20 @@ export default function Store() {
         </div>
       )}
 
-      <style jsx>{`
-        @keyframes drop {
-          0% { transform: translateY(-200%); opacity: 0; }
-          30% { opacity: 1; }
-          60% { transform: translateY(20%); }
-          100% { transform: translateY(0%); opacity: 0; }
-        }
-        @keyframes cartMove {
-          0% { transform: translateX(-150vw); }
-          30% { transform: translateX(0); }
-          70% { transform: translateX(0); }
-          100% { transform: translateX(150vw); }
-        }
-      `}</style>
+      <style>{`
+  @keyframes drop {
+    0% { transform: translateY(-200%); opacity: 0; }
+    30% { opacity: 1; }
+    60% { transform: translateY(20%); }
+    100% { transform: translateY(0%); opacity: 0; }
+  }
+  @keyframes cartMove {
+    0% { transform: translateX(-150vw); }
+    30% { transform: translateX(0); }
+    70% { transform: translateX(0); }
+    100% { transform: translateX(150vw); }
+  }
+`}</style>
 
       {/* NAVBAR */}
       <nav className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 text-white transition-all duration-300 ${scrolled ? "bg-black/60 backdrop-blur-md" : "bg-black"}`}>
